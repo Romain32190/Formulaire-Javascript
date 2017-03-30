@@ -1,10 +1,9 @@
-    var Person = {
+    var info = {
         "prenom" : "",
         "nom" : "",
         "age" : 0
 
     };
-
 
 
     var prenom = "";
@@ -29,11 +28,17 @@
 
 	$("#button").click(function(){
 
-    	console.log(prenom);
-    	console.log(nom);
-    	console.log(age);
+    	//console.log(prenom);
+    	//console.log(nom);
+    	//console.log(age);
+	var person = {"prenom" : prenom, "nom" : nom, "age" : age};
+
+	$("#table").append($('<tr><td>'+prenom+'</td><td>'+nom+'</td><td>'+age+'</td></tr>'));
+	$('input').val("");
 
 	});
+
+
 
 
 
