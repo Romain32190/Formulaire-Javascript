@@ -8,7 +8,7 @@
 
     var prenom = "";
 	var nom = "" ;
-	var age = "";
+	var age = "";	
 
 	$("#prenom").keyup(function(){
 		prenom = $("#prenom").val();
@@ -26,6 +26,7 @@
 
 	});
 
+
 	$("#button").click(function(){
 
     	//console.log(prenom);
@@ -33,8 +34,10 @@
     	//console.log(age);
 	var person = {"prenom" : prenom, "nom" : nom, "age" : age};
 
-	$("#table").append($('<tr><td>'+prenom+'</td><td>'+nom+'</td><td>'+age+'</td></tr>'));
+	$("#table").append($('<tr><td>'+prenom+'</td><td>'+nom+'</td><td>'+age+'</td><td></td></tr>'));
 	$('input').val("");
+  
+
 
 	});
 
