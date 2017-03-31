@@ -2,8 +2,9 @@ body{
 text-align: center;
 }
 
-label{
+label, input{
 text-decoration: underline;
+margin-top:80px;
 }
 
 table{
@@ -15,4 +16,9 @@ border: 10px;
 
 h1{
 text-decoration: underline;
+color: blue;
+}
+
+th{
+text-align:center;
 }

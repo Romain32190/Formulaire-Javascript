@@ -34,8 +34,15 @@
     	//console.log(age);
 	var person = {"prenom" : prenom, "nom" : nom, "age" : age};
 
-	$("#table").append($('<tr><td>'+prenom+'</td><td>'+nom+'</td><td>'+age+'</td><td></td></tr>'));
+	$("#table").append($('<tr><td>'+prenom+'</td><td>'+nom+'</td><td>'+age+'</td><td>'+"<button class='supprimer'>Supprimer</button>"+"</td></tr>"));
 	$('input').val("");
+
+
+
+	$( "tbody" ).delegate(".supprimer", "click", function(){
+    $(this).parent().parent().remove();
+
+    });
   
 
 
