@@ -1,5 +1,5 @@
 body{
-text-align: center;
+text-align: center;	
 }
 
 label, input{
@@ -16,7 +16,7 @@ border: 10px;
 
 h1{
 text-decoration: underline;
-color: blue;
+color: red;
 }
 
 th{

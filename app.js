@@ -1,3 +1,9 @@
+$(document).ready(function() { 
+	$( "#table" ).delegate("thead", "click", function(){
+    	$('#table').tablesorter().trigger('update');
+   });
+
+
     var info = {
         "prenom" : "",
         "nom" : "",
@@ -43,10 +49,15 @@
     $(this).parent().parent().remove();
 
     });
-  
 
 
 	});
+
+});
+
+
+
+
 
 
 
